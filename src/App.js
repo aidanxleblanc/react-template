@@ -1,7 +1,13 @@
+import { useSelector, useDispatch } from 'react-redux';
 import logo from './logo.svg';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
+
+  const data = useSelector((state) => state.data.data);
+  const dispatch = useDispatch();
+
   return (
     <div className="App">
       <header className="App-header">
